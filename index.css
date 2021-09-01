@@ -1,0 +1,23 @@
+.letterSpace{
+    letter-spacing:2px;
+}
+
+nav img{
+    max-height: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#telNav, a{
+    margin-top: 14px;
+}
+
+nav i{
+    margin-right: 5px;
+}
+
+.titleNav{
+    
+}
