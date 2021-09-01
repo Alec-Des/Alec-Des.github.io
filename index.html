@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cabinet vétérinaire Dr. Baudelet</title>
+        <meta name="description" content="Cabinet médical de médecine générale, rue du Centenaire 21 à 6927 Tellin">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/fa1b7eb2a4.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body style="margin-right:200px">
+<!-- Navbar (sit on top) -->
+        <nav class="w3-top">
+            <div class="w3-bar w3-card" id="myNavbar">
+                <img class="w3-bar-item w3-hide-small" src="images/logo_cabinet_veterinaire_baudelet.jpg" alt="Logo du cabinet">
+                <a href="#home" class="w3-bar-item letterSpace titleNav">Dr. Frédérique Baudelet</a>
+<!-- Right-sided navbar links. Hide them on small screens -->
+                <div class="w3-right w3-hide-medium w3-hide-small">
+                    <a href="#about" class="w3-bar-item letterSpace">Accueil</a>
+                    <a href="#menu" class="w3-bar-item letterSpace">Prestations</a>
+                    <a href="#contact" class="w3-bar-item letterSpace">Le cabinet</a>
+                    <div class="w3-bar-item" id="telNav">
+                        <i class="fas fa-phone"></i><span>084 34 42 87</span>
+                    </div>
+                </div>
+                <!-- Cache les liens de la navbar à droite pour les petits et moyens écrans et les remplace par l'icône barres -->
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        
+<!-- Sidebar sur petit écran en cliquant sur l'icône barres -->
+        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-hide-large" style="width:200px; right:0; margin-top: -10px;" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fermer &times;</a>
+            <a href="#accueil" onclick="w3_close()" class="w3-bar-item w3-button">Accueil</a>
+            <a href="#horaires" onclick="w3_close()" class="w3-bar-item w3-button">Prestations</a>
+            <a href="#equipe" onclick="w3_close()" class="w3-bar-item w3-button">Le cabinet</a>
+        </nav>
+        
+<!-- Script -->
+        <script>
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+            
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+        </script>
+    </body>
+</html>
