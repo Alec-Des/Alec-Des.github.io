@@ -1,19 +1,79 @@
-.letterSpace{
+/*.letterSpace{
     letter-spacing:2px;
-}
-
-nav img{
-    max-height: 70px;
-}
-
-a{
-    text-decoration: none;
 }
 
 #telNav, a{
     margin-top: 14px;
 }
 
-nav i{
+#telNav{
+    background-color: blue;
+    border-radius: 15px;
     margin-right: 5px;
+}
+
+*/
+
+/*--------------------------------*/
+
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav span, a{
+    margin-top: 14px;
+}
+
+nav span{
+    margin-right: 10px;
+    background-color: aqua;
+    border-radius: 25px;
+}
+
+nav img{
+    margin-right: -20px;
+}
+
+header{
+    margin-top: 80px;
+}
+
+#accueil-button{
+    background-color: #4395a8;
+}
+
+.w3-card img {
+    height:10vh;
+}
+
+#modal_mentions_legales header, #modal_mentions_legales footer{
+    background-color: #4395a8;
+    color: white;
+}
+
+#modal_mentions_legales footer{
+    height: 43px;
+}
+
+footer{
+    background-color: rgb(10,190,153);
+    color: white;
+}
+
+#mySidebar{
+    display:none;
+    background-color: #4395a8;
+    color: white;
+}
+
+#chienCurieux{
+    display: flex;
+    margin: auto;
+    height: 100px;;
 }

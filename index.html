@@ -3,41 +3,84 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Cabinet vétérinaire Dr. Baudelet</title>
-        <meta name="description" content="Cabinet vétérinaire du Dr. Baudelet, Avenue d'Alost 32 à 5580 Rochefort">
+        <title>Cabinet vétérianire du Dr. Baudelet</title>
+        <meta name="description" content="Cabinet vétérianire du Dr. BAudelet, avenue d'Alost 32 à 5580 Rochefort">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="index.css">
         <script src="https://kit.fontawesome.com/fa1b7eb2a4.js" crossorigin="anonymous"></script>
     </head>
     
-    <body style="margin-right:200px">
-<!-- Navbar (sit on top) -->
+    <body>
+<!-- Navbar au-dessus -->
         <nav class="w3-top">
             <div class="w3-bar w3-card" id="myNavbar">
-                <img class="w3-bar-item w3-hide-small" src="images/logo_cabinet_veterinaire_baudelet.jpg" alt="Logo du cabinet">
-                <a href="#home" class="w3-bar-item letterSpace titleNav">Dr. Frédérique Baudelet</a>
-<!-- Right-sided navbar links. Hide them on small screens -->
-                <div class="w3-right w3-hide-medium w3-hide-small">
-                    <a href="#about" class="w3-bar-item letterSpace">Accueil</a>
-                    <a href="#menu" class="w3-bar-item letterSpace">Prestations</a>
-                    <a href="#contact" class="w3-bar-item letterSpace">Le cabinet</a>
-                    <div class="w3-bar-item" id="telNav">
-                        <i class="fas fa-phone"></i><span>084 34 42 87</span>
-                    </div>
+                <img class="w3-bar-item" src="images/logo_cabinet_veterinaire_baudelet.jpg" alt="Logo du cabinet">
+                <a href="#" class="w3-bar-item w3-wide">Dr. Frédérique Baudelet</a>
+<!-- Liens de la navbar placés à droite -->
+                <div class="w3-right w3-hide-small w3-hide-medium">
+                    <a href="#accueil" class="w3-bar-item">Accueil</a>
+                    <a href="#horaires" class="w3-bar-item"> Prestations</a>
+                    <a href="#horaires" class="w3-bar-item"> Le cabinet</a>
+                    <a href="#contact" class="w3-bar-item"> Contact</a>
+                    <span class="w3-bar-item"> <i class="fas fa-phone"></i> 084 00 00 00 </span>
                 </div>
-                <!-- Cache les liens de la navbar à droite pour les petits et moyens écrans et les remplace par l'icône barres -->
-                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                
+<!-- Cache les liens de la navbar à droite pour les petits écrans et les remplace par l'icône barres -->
+                <a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large" onclick="w3_open()"><i class="fa fa-bars"></i></a>
             </div>
         </nav>
-        
+
 <!-- Sidebar sur petit écran en cliquant sur l'icône barres -->
-        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-hide-large" style="width:200px; right:0; margin-top: -10px;" id="mySidebar">
+        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-large" id="mySidebar">
             <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fermer &times;</a>
             <a href="#accueil" onclick="w3_close()" class="w3-bar-item w3-button">Accueil</a>
             <a href="#horaires" onclick="w3_close()" class="w3-bar-item w3-button">Prestations</a>
             <a href="#equipe" onclick="w3_close()" class="w3-bar-item w3-button">Le cabinet</a>
+            <a href="#infrastructures" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+            <span onclick="w3_close()" class="w3-bar-item w3-button"> <i class="fas fa-phone"></i> 084 00 00 00 </span>
         </nav>
+
+<!-- Header avec image en pleine hauteur -->
+        <header class="w3-display-container">
+            
+        </header>
+        
+<!-- Photo chien curieux -->
+        <div>
+            <img src="images/pexels-photo-406014.png" alt="Photo d'un chien bien curieux" id="chienCurieux">
+        </div>
+
+<!-- Footer -->
+        <footer class="w3-center w3-padding-32">
+            <p>CMHL 2021 | Made by Be-Sol | Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-black">w3.css</a> | Top picture by <a href="https://www.pexels.com/fr-fr/photo/medecin-hopital-medical-instrument-5149754/" target="_blank" class="w3-hover-text-black"> Roger Brown</a> | <a role="button" onclick="document.getElementById('modal_mentions_legales').style.display='block'" id="lien_bouton" class="w3-hover-text-black"> Mentions légales </a> </p>
+        </footer>
+        
+<!-- Modal pour mentions légales -->
+        <div id="modal_mentions_legales" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top">
+                <header class="w3-container"> 
+                    <span onclick="document.getElementById('modal_mentions_legales').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h2> Mentions légales </h2>
+                </header>
+                <div class="w3-container">
+                    <h1>Identité et coordonnées de l’éditeur responsable du site</h1>
+                    <ul>
+                        <li>Nom de la société: Cabinet médical de la Haute-Lesse</li>
+                        <li>Forme juridique: SRL</li>
+                        <li>Adresse du siège social: Rue du Centenaire 21, 6927 Tellin</li>
+                        <li>Téléphone: 084 46 89 29</li>
+                        <li>Mail: cmhlsecretariat@gmail.com</li>
+                        <li>BE 0842.493.795</li>
+                        <!--<li>RPM Dinant</li>-->
+                    </ul>
+                </div>
+                <footer class="w3-container">
+                    <p></p>
+                    <span onclick="document.getElementById('modal_mentions_legales').style.display='none'" class="w3-button w3-display-bottomright">Fermer</span>
+                </footer>
+            </div>
+        </div>
         
 <!-- Script -->
         <script>
