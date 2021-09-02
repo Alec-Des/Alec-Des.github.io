@@ -16,7 +16,8 @@
         <nav class="w3-top">
             <div class="w3-bar w3-card" id="myNavbar">
                 <img class="w3-bar-item" src="images/logo_cabinet_veterinaire_baudelet.jpg" alt="Logo du cabinet">
-                <a href="#" class="w3-bar-item w3-wide">Dr. Frédérique Baudelet</a>
+                <a href="#" class="w3-bar-item w3-wide w3-hide-small" id="nom">Dr. Frédérique Baudelet</a>
+                <a href="#" class="w3-bar-item w3-hide-large w3-hide-medium" id="nom">Dr. Frédérique Baudelet</a>
 <!-- Liens de la navbar placés à droite -->
                 <div class="w3-right w3-hide-small w3-hide-medium">
                     <a href="#accueil" class="w3-bar-item">Accueil</a>
@@ -27,7 +28,7 @@
                 </div>
                 
 <!-- Cache les liens de la navbar à droite pour les petits écrans et les remplace par l'icône barres -->
-                <a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large" onclick="w3_open()" id="bars"><i class="fa fa-bars"></i></a>
             </div>
         </nav>
 
