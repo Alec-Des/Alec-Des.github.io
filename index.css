@@ -1,89 +1,135 @@
-/*.letterSpace{
-    letter-spacing:2px;
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif;
 }
-
-#telNav, a{
-    margin-top: 14px;
-}
-
-#telNav{
-    background-color: blue;
-    border-radius: 15px;
-    margin-right: 5px;
-}
-
-*/
-
-/*--------------------------------*/
-
 
 body, html {
     height: 100%;
     line-height: 1.8;
 }
 
-a{
-    text-decoration: none;
+h1{
+    font-size: 1.8rem;
 }
 
-nav span, a{
-    margin-top: 18px;
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/pexels-roger-brown-5149754.jpg");
+    height: 70%;
 }
 
-nav span{
-    margin-right: 10px;
-    background-color: aqua;
-    border-radius: 25px;
-}
-
-nav img{
-    margin-right: -20px;
-    margin-left: -10px;
+.bgimg-1 {
+    line-height: 1.5;
 }
 
 header{
-    margin-top: 80px;
+    margin-top: 60px;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+header div{
+    padding:48px;
+}
+
+.header-button, .table-button{
+    background-color: rgb(0,165,203);
+}
+
+#button_small_screen{
+    margin-top: -10px;
+}
+
+#accueil, #horaires, #equipe, #competences, #work, #en_pratique, #pricing, #contact, #infrastructures{
+    padding:60px 16px;
+}
+
+#accueil_row, #equipe_row, #infrastructure-row{
+    margin-top:20px;
 }
 
 #accueil-button{
     background-color: #4395a8;
 }
 
-.w3-card img {
-        height:80px; 
-    }
-
-@media only screen and (max-width: 360px) {
-    .w3-card img {
-        height:55px; 
-    }
-    
-    #nom{
-        letter-spacing: 0px;
-        margin: 10px -5px;
-        font-size: 0.8rem;
-    }
-    #bars{
-        margin: 3px;
-        padding-top: 11px;
-    }
-    header{
-        margin-top: 58px;
-    }
-
+.w3-card img    {
+    max-height:35vh;
+    display:flex;
+    margin: auto;
+    padding-top: 10px;
 }
 
-#modal_mentions_legales header, #modal_mentions_legales footer{
+.i-delphine{
+    margin: 10px 0px 0px 0px;
+    font-size: 120px;
+}
+
+#modal_info_jordan header, #modal_info_jordan footer, #modal_mentions_legales header, #modal_mentions_legales footer{
     background-color: #4395a8;
     color: white;
 }
 
-#modal_mentions_legales footer{
+#modal_info_jordan footer, #modal_mentions_legales footer{
     height: 43px;
 }
 
+#competences h1, #horaires h1{
+    padding-bottom: 30px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+#en_pratique img{
+    max-width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+#competences{
+    background-color: #4395a8;
+    color: white;
+}
+
+#infrastructures img{
+    width: 100%;
+    margin: 5px 0;
+}
+
+#horaires h2{
+    background-color: #4395a8;
+    margin: 0;
+    color: white;
+}
+
+#contact h2, #en_pratique h2{
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+
+#contact i{
+    margin-right: 10px;
+}
+
+#contact h2{
+    color: #4395a8;
+}
+
 footer{
-    background-color: rgb(10,190,153);
+    background-color: #4395a8;
     color: white;
 }
 
@@ -93,8 +139,38 @@ footer{
     color: white;
 }
 
-#chienCurieux{
+#lien_bouton{
+    text-decoration: underline;
+}
+
+#lien_bouton:hover{
+    cursor: pointer;
+}
+
+.row-same-height{
     display: flex;
+    flex-flow: row wrap;
+}
+
+.same-height{
     margin: auto;
-    height: 100px;;
+    text-align: center;
+}
+
+#med-number{
+    color: red;
+    font-weight: bold;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.border-bottom{
+    border-bottom: 1px solid lightgrey;
+}
+
+.photo_equipe{
+    max-width: 40vw;
+    margin: 20px;
 }
